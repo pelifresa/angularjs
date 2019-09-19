@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+      type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js">
+    </script>
+    <script
+      type="text/javascript" src="codigo.js">
+    </script>
+
+  </head>
+  <body ng-app="App">
+    <div ng-controller="pruebasController">
+      <h1>{{mensaje}}</h1>
+      <button ng-click="cambiarMensaje()"> ¿Cambiamos?</button>
+    </div>
+    <br>
+    Mensaje:<input ng-model="mensaje">
+  </body>
+</html>
