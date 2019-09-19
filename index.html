@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+      type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js">
+    </script>
+
+  </head>
+  <body ng-app="" ng-init="puntuacion=[2,3,4,5,6]" style="background-color:{{miColor}}" ng-style="miColor">
+    <div>
+
+      <p>
+        Puntos de la 3ª ronda:
+        <span ng-bind="puntuacion[2]"></span>
+          ----- -----
+          <span>{{puntuacion[2]}}</span>
+      </p>
+
+      <input type="radio" ng-model="miColor" style="background-color:{{value}};" value="red">
+      ROJO
+      <input type="radio" ng-model="miColor" style="background-color:{{value}};" value="yellow">
+      AMARILLO
+      <input type="radio" ng-model="miColor" style="background-color:{{value}};" value="blue">
+      AZUL
+
+
+        <input type="button" ng-model="miColor" value="violet" ng-Click="miColor={background:'violet'}">
+
+
+    </div>
+  </body>
+</html>
